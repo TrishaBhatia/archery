@@ -36,8 +36,9 @@ function preload()
 function setup() {
 	createCanvas(windowWidth,windowHeight);
 background(255)
-step=createSprite(380,300);
+step=createSprite(windowWidth/4,windowHeight/4);
     step.addImage(steps);
+	step.scale=0.5;
      RbGroup=createGroup();
      Arrow=createGroup();
      obstaclesGroup=createGroup();
