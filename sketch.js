@@ -88,16 +88,16 @@ function draw() {
   {
     
     background(bg);
-    var score=createSprite(520,15);
+    var score=createSprite(10,15);
     score.addImage(life);
     score.scale=0.1;
     fill("white");
     textSize(20);
-    text(":"+live,550,20);
+    text(":"+live,30,20);
 
     fill("white");
     textSize(20);
-   text("SCORE:"+count,650,20);
+   text("SCORE:"+count,90,20);
     if(count===10)
     {
       live++;
