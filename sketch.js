@@ -36,9 +36,8 @@ function preload()
 function setup() {
 	createCanvas(windowWidth,windowHeight);
 background(255)
-step=createSprite(windowWidth/4,windowHeight/4);
+step=createSprite(380,300);
     step.addImage(steps);
-	step.scale=0.2;
      RbGroup=createGroup();
      Arrow=createGroup();
      obstaclesGroup=createGroup();
@@ -94,7 +93,7 @@ function draw() {
     score.scale=0.1;
     fill("white");
     textSize(20);
-    text(":"+live,p1.x,20);
+    text(":"+live,550,20);
 
     fill("white");
     textSize(20);
@@ -214,7 +213,7 @@ function monster()
  {
   if(frameCount%60 === 0)
   {
-   var stone=createSprite(random(displayWidth/2,displayWidth),0,200,100);
+   var stone=createSprite(random(windowWidth/4,windowWidth),0,200,100);
    stone.addImage(stone_img);
    stone.scale=0.3;
    stone.velocityY=4;
