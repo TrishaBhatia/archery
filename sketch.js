@@ -8,7 +8,7 @@ var steps,step;
 var RbGroup,Arrow;
 var life;
 var live=3;
-var gameOver;
+var over_img;
 var count=0;
 function preload()
 {
@@ -28,7 +28,7 @@ function preload()
   arrow=loadImage("arrow.png");
   steps=loadImage("steps.jpg");
   life=loadImage("life.png");
-  gameOver=loadImage("gameOver.png");
+  over_img=loadImage("gameOver.png");
   stone_img=loadImage("stone.png");
 
 }
@@ -159,7 +159,7 @@ console.log(live);
       fill("black");
      // sound3.play();
       var gm=createSprite(600,250)
-    gm.addImage(gameOver);
+    gm.addImage(over_img);
       gm.scale=1;
     }
     
