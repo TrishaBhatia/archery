@@ -38,7 +38,7 @@ function setup() {
 background(255)
 step=createSprite(windowWidth/4,windowHeight/4);
     step.addImage(steps);
-	step.scale=0.5;
+	step.scale=0.2;
      RbGroup=createGroup();
      Arrow=createGroup();
      obstaclesGroup=createGroup();
