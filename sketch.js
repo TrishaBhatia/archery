@@ -28,7 +28,7 @@ function preload()
   arrow=loadImage("arrow.png");
   steps=loadImage("steps.jpg");
   life=loadImage("life.png");
-  gameOver=loadImage("gameover.png");
+  gameOver=loadImage("gameOver.png");
   stone_img=loadImage("stone.png");
 
 }
