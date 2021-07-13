@@ -93,7 +93,7 @@ function draw() {
     score.scale=0.1;
     fill("white");
     textSize(20);
-    text(":"+live,30,20);
+    text(":"+live,20,20);
 
     fill("white");
     textSize(20);
