@@ -34,9 +34,9 @@ function preload()
 }
 
 function setup() {
-	createCanvas(displayWidth,displayHeight);
+	createCanvas(windowWidth,windowHeight);
 background(255)
-step=createSprite(displayWidth/4,displayHeight/4);
+step=createSprite(windowWidth/4,windowHeight/4);
     step.addImage(steps);
 	step.scale=0.2;
      RbGroup=createGroup();
@@ -183,7 +183,7 @@ function monster()
 {
  if(frameCount%80 === 0)
  {
-  var mon1=createSprite(displayWidth,random(0,displayHeight-200),100,100);
+  var mon1=createSprite(windowWidth,random(0,windowHeight-200),100,100);
  
   var r=Math.round(random(1,7));
   console.log(r);
